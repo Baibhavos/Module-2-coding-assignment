@@ -1,0 +1,106 @@
+.p{
+	text-align: center;
+	font-size: 15px;
+}
+
+.one{
+	margin-top: 15px;
+	float: right;
+	width: 25%;
+	height: 200px;
+	background-color: grey;
+	border: 1px solid black;
+	padding: 2px;
+}
+.one>h1{
+	float: right;
+	border:1px solid black;
+	background-color: purple;
+}
+
+.two{
+	margin-top: 15px;
+	margin-right: 50px;
+	float: right;
+	padding: 2px;
+	width: 25%;
+	height: 200px;
+	background-color: yellow;
+	border: 1px solid black;
+}
+.two>h1{
+	float: right;
+	border:1px solid black;
+	background-color: pink;
+}
+
+.three{
+	margin-top: 15px;
+	float: left;
+	width: 25%;
+	height: 200px;
+	background-color: orange;
+	border: 1px solid black;
+	padding: 2px;
+}
+.three>h1{
+	float: right;
+	border:1px solid black;
+	background-color: green;
+}
+
+@media (min-width: 1200px){
+	.one .two .three {
+		float: left;
+	}
+	.one{
+		width: 30%;
+	}
+	.two
+	{
+		width: 30%;
+	}
+	.three
+	{
+		width: 30%;
+	}
+}
+
+@media(min-width: 768px) and (max-width: 992px){
+	.one .two .three {
+		float: left;
+	}
+	.one{
+		width: 40%;
+		
+	}
+	.two
+	{
+		width: 40%;
+		margin-right: 100px;
+	}
+	.three
+	{
+		width: 100%;
+	}
+}
+
+@media(max-width: 767px){
+	.one .two .three {
+		float: left;
+	}
+	.one{
+		width: 100%;
+		float: left;
+	}
+	.two
+	{
+		width: 100%;
+		float: left;
+	}
+	.three
+	{
+		width: 100%;
+		float: left;
+	}
+}
